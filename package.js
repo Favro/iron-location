@@ -6,7 +6,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
-  api.versionsFrom('METEOR@0.9.2');
+  api.versionsFrom('METEOR@1.10.2');
 
   api.use('underscore');
   api.use('tracker');
@@ -27,6 +27,8 @@ Package.on_use(function (api) {
 });
 
 Package.on_test(function (api) {
+  api.versionsFrom('METEOR@1.10.2');
+
   api.use('iron:location');
   api.use('tinytest');
   api.use('test-helpers');
